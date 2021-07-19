@@ -18,6 +18,9 @@ module.exports = {
     if (doc.type === 'homepage') {
       return `/${doc.lang}`;
     }
+    if (doc.type === 'article') {
+      return `/${doc.lang}`;
+    }
     return '/';
   },
 
@@ -27,6 +30,9 @@ module.exports = {
       return `/${doc.lang}/${doc.uid}`;
     }
     if (doc.type === 'homepage') {
+      return `/${doc.lang}`;
+    }
+    if (doc.type === 'article') {
       return `/${doc.lang}`;
     }
     return '/';
